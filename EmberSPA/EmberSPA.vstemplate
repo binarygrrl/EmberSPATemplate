@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>EmberSPA</Name>
+    <Description>Ember JS Single Page Application Template With MVC 4 Web Api Backend for VS2010</Description>
+    <Icon>EmberSPA.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>bcdea407-a2c3-4b43-9701-a21c1ddbbe18</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>EmberSPA</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem TargetFileName="handlebarsjs_license" ReplaceParameters="false">app_readme\handlebarsjs_license</ProjectItem>
+      <ProjectItem TargetFileName="handlebarsjs_readme.md" ReplaceParameters="false">app_readme\handlebarsjs_readme.md</ProjectItem>
+      <ProjectItem TargetFileName="bundleconfig.cs" ReplaceParameters="true">app_start\bundleconfig.cs</ProjectItem>
+      <ProjectItem TargetFileName="filterconfig.cs" ReplaceParameters="true">app_start\filterconfig.cs</ProjectItem>
+      <ProjectItem TargetFileName="fontawesomebundleconfig.cs" ReplaceParameters="true">app_start\fontawesomebundleconfig.cs</ProjectItem>
+      <ProjectItem TargetFileName="routeconfig.cs" ReplaceParameters="true">app_start\routeconfig.cs</ProjectItem>
+      <ProjectItem TargetFileName="webapiconfig.cs" ReplaceParameters="true">app_start\webapiconfig.cs</ProjectItem>
+      <ProjectItem TargetFileName="bootstrap-theme.css" ReplaceParameters="false">content\bootstrap-theme.css</ProjectItem>
+      <ProjectItem TargetFileName="bootstrap-theme.css.map" ReplaceParameters="false">content\bootstrap-theme.css.map</ProjectItem>
+      <ProjectItem TargetFileName="bootstrap-theme.min.css" ReplaceParameters="false">content\bootstrap-theme.min.css</ProjectItem>
+      <ProjectItem TargetFileName="bootstrap.css" ReplaceParameters="false">content\bootstrap.css</ProjectItem>
+      <ProjectItem TargetFileName="bootstrap.css.map" ReplaceParameters="false">content\bootstrap.css.map</ProjectItem>
+      <ProjectItem TargetFileName="bootstrap.min.css" ReplaceParameters="false">content\bootstrap.min.css</ProjectItem>
+      <ProjectItem TargetFileName="font-awesome.css" ReplaceParameters="false">content\font-awesome.css</ProjectItem>
+      <ProjectItem TargetFileName="font-awesome.min.css" ReplaceParameters="false">content\font-awesome.min.css</ProjectItem>
+      <ProjectItem TargetFileName="site.css" ReplaceParameters="false">content\site.css</ProjectItem>
+      <ProjectItem TargetFileName="accordion.css" ReplaceParameters="false">content\themes\base\accordion.css</ProjectItem>
+      <ProjectItem TargetFileName="all.css" ReplaceParameters="false">content\themes\base\all.css</ProjectItem>
+      <ProjectItem TargetFileName="autocomplete.css" ReplaceParameters="false">content\themes\base\autocomplete.css</ProjectItem>
+      <ProjectItem TargetFileName="base.css" ReplaceParameters="false">content\themes\base\base.css</ProjectItem>
+      <ProjectItem TargetFileName="button.css" ReplaceParameters="false">content\themes\base\button.css</ProjectItem>
+      <ProjectItem TargetFileName="core.css" ReplaceParameters="false">content\themes\base\core.css</ProjectItem>
+      <ProjectItem TargetFileName="datepicker.css" ReplaceParameters="false">content\themes\base\datepicker.css</ProjectItem>
+      <ProjectItem TargetFileName="dialog.css" ReplaceParameters="false">content\themes\base\dialog.css</ProjectItem>
+      <ProjectItem TargetFileName="draggable.css" ReplaceParameters="false">content\themes\base\draggable.css</ProjectItem>
+      <ProjectItem TargetFileName="ui-bg_flat_0_aaaaaa_40x100.png" ReplaceParameters="false">content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png</ProjectItem>
+      <ProjectItem TargetFileName="ui-bg_flat_75_ffffff_40x100.png" ReplaceParameters="false">content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png</ProjectItem>
+      <ProjectItem TargetFileName="ui-bg_glass_55_fbf9ee_1x400.png" ReplaceParameters="false">content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png</ProjectItem>
+      <ProjectItem TargetFileName="ui-bg_glass_65_ffffff_1x400.png" ReplaceParameters="false">content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png</ProjectItem>
+      <ProjectItem TargetFileName="ui-bg_glass_75_dadada_1x400.png" ReplaceParameters="false">content\themes\base\images\ui-bg_glass_75_dadada_1x400.png</ProjectItem>
+      <ProjectItem TargetFileName="ui-bg_glass_75_e6e6e6_1x400.png" ReplaceParameters="false">content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png</ProjectItem>
+      <ProjectItem TargetFileName="ui-bg_glass_95_fef1ec_1x400.png" ReplaceParameters="false">content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png</ProjectItem>
+      <ProjectItem TargetFileName="ui-bg_highlight-soft_75_cccccc_1x100.png" ReplaceParameters="false">content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png</ProjectItem>
+      <ProjectItem TargetFileName="ui-icons_222222_256x240.png" ReplaceParameters="false">content\themes\base\images\ui-icons_222222_256x240.png</ProjectItem>
+      <ProjectItem TargetFileName="ui-icons_2e83ff_256x240.png" ReplaceParameters="false">content\themes\base\images\ui-icons_2e83ff_256x240.png</ProjectItem>
+      <ProjectItem TargetFileName="ui-icons_454545_256x240.png" ReplaceParameters="false">content\themes\base\images\ui-icons_454545_256x240.png</ProjectItem>
+      <ProjectItem TargetFileName="ui-icons_888888_256x240.png" ReplaceParameters="false">content\themes\base\images\ui-icons_888888_256x240.png</ProjectItem>
+      <ProjectItem TargetFileName="ui-icons_cd0a0a_256x240.png" ReplaceParameters="false">content\themes\base\images\ui-icons_cd0a0a_256x240.png</ProjectItem>
+      <ProjectItem TargetFileName="menu.css" ReplaceParameters="false">content\themes\base\menu.css</ProjectItem>
+      <ProjectItem TargetFileName="progressbar.css" ReplaceParameters="false">content\themes\base\progressbar.css</ProjectItem>
+      <ProjectItem TargetFileName="resizable.css" ReplaceParameters="false">content\themes\base\resizable.css</ProjectItem>
+      <ProjectItem TargetFileName="selectable.css" ReplaceParameters="false">content\themes\base\selectable.css</ProjectItem>
+      <ProjectItem TargetFileName="selectmenu.css" ReplaceParameters="false">content\themes\base\selectmenu.css</ProjectItem>
+      <ProjectItem TargetFileName="slider.css" ReplaceParameters="false">content\themes\base\slider.css</ProjectItem>
+      <ProjectItem TargetFileName="sortable.css" ReplaceParameters="false">content\themes\base\sortable.css</ProjectItem>
+      <ProjectItem TargetFileName="spinner.css" ReplaceParameters="false">content\themes\base\spinner.css</ProjectItem>
+      <ProjectItem TargetFileName="tabs.css" ReplaceParameters="false">content\themes\base\tabs.css</ProjectItem>
+      <ProjectItem TargetFileName="theme.css" ReplaceParameters="false">content\themes\base\theme.css</ProjectItem>
+      <ProjectItem TargetFileName="tooltip.css" ReplaceParameters="false">content\themes\base\tooltip.css</ProjectItem>
+      <ProjectItem TargetFileName="homecontroller.cs" ReplaceParameters="true">controllers\homecontroller.cs</ProjectItem>
+      <ProjectItem TargetFileName="valuescontroller.cs" ReplaceParameters="true">controllers\valuescontroller.cs</ProjectItem>
+      <ProjectItem TargetFileName="favicon.ico" ReplaceParameters="false">favicon.ico</ProjectItem>
+      <ProjectItem TargetFileName="fontawesome-webfont.eot" ReplaceParameters="false">fonts\fontawesome-webfont.eot</ProjectItem>
+      <ProjectItem TargetFileName="fontawesome-webfont.svg" ReplaceParameters="false">fonts\fontawesome-webfont.svg</ProjectItem>
+      <ProjectItem TargetFileName="fontawesome-webfont.ttf" ReplaceParameters="false">fonts\fontawesome-webfont.ttf</ProjectItem>
+      <ProjectItem TargetFileName="fontawesome-webfont.woff" ReplaceParameters="false">fonts\fontawesome-webfont.woff</ProjectItem>
+      <ProjectItem TargetFileName="fontawesome.otf" ReplaceParameters="false">fonts\fontawesome.otf</ProjectItem>
+      <ProjectItem TargetFileName="glyphicons-halflings-regular.eot" ReplaceParameters="false">fonts\glyphicons-halflings-regular.eot</ProjectItem>
+      <ProjectItem TargetFileName="glyphicons-halflings-regular.svg" ReplaceParameters="false">fonts\glyphicons-halflings-regular.svg</ProjectItem>
+      <ProjectItem TargetFileName="glyphicons-halflings-regular.ttf" ReplaceParameters="false">fonts\glyphicons-halflings-regular.ttf</ProjectItem>
+      <ProjectItem TargetFileName="glyphicons-halflings-regular.woff" ReplaceParameters="false">fonts\glyphicons-halflings-regular.woff</ProjectItem>
+      <ProjectItem TargetFileName="global.asax" ReplaceParameters="true">global.asax</ProjectItem>
+      <ProjectItem TargetFileName="global.asax.cs" ReplaceParameters="true">global.asax.cs</ProjectItem>
+      <ProjectItem TargetFileName="accent.png" ReplaceParameters="false">images\accent.png</ProjectItem>
+      <ProjectItem TargetFileName="bullet.png" ReplaceParameters="false">images\bullet.png</ProjectItem>
+      <ProjectItem TargetFileName="heroaccent.png" ReplaceParameters="false">images\heroaccent.png</ProjectItem>
+      <ProjectItem TargetFileName="orderedlist0.png" ReplaceParameters="false">images\orderedlist0.png</ProjectItem>
+      <ProjectItem TargetFileName="orderedlist1.png" ReplaceParameters="false">images\orderedlist1.png</ProjectItem>
+      <ProjectItem TargetFileName="orderedlist2.png" ReplaceParameters="false">images\orderedlist2.png</ProjectItem>
+      <ProjectItem TargetFileName="orderedlist3.png" ReplaceParameters="false">images\orderedlist3.png</ProjectItem>
+      <ProjectItem TargetFileName="orderedlist4.png" ReplaceParameters="false">images\orderedlist4.png</ProjectItem>
+      <ProjectItem TargetFileName="orderedlist5.png" ReplaceParameters="false">images\orderedlist5.png</ProjectItem>
+      <ProjectItem TargetFileName="orderedlist6.png" ReplaceParameters="false">images\orderedlist6.png</ProjectItem>
+      <ProjectItem TargetFileName="orderedlist7.png" ReplaceParameters="false">images\orderedlist7.png</ProjectItem>
+      <ProjectItem TargetFileName="orderedlist8.png" ReplaceParameters="false">images\orderedlist8.png</ProjectItem>
+      <ProjectItem TargetFileName="orderedlist9.png" ReplaceParameters="false">images\orderedlist9.png</ProjectItem>
+      <ProjectItem TargetFileName="packages.config" ReplaceParameters="false">packages.config</ProjectItem>
+      <ProjectItem TargetFileName="assemblyinfo.cs" ReplaceParameters="true">properties\assemblyinfo.cs</ProjectItem>
+      <ProjectItem TargetFileName="_references.js" ReplaceParameters="false">scripts\_references.js</ProjectItem>
+      <ProjectItem TargetFileName="app.js" ReplaceParameters="false">scripts\app\app.js</ProjectItem>
+      <ProjectItem TargetFileName="application_controller.js" ReplaceParameters="false">scripts\app\controllers\application_controller.js</ProjectItem>
+      <ProjectItem TargetFileName="helpers.js" ReplaceParameters="false">scripts\app\helpers.js</ProjectItem>
+      <ProjectItem TargetFileName="router.js" ReplaceParameters="false">scripts\app\router.js</ProjectItem>
+      <ProjectItem TargetFileName="app_home_route.js" ReplaceParameters="false">scripts\app\routes\app_home_route.js</ProjectItem>
+      <ProjectItem TargetFileName="app_route.js" ReplaceParameters="false">scripts\app\routes\app_route.js</ProjectItem>
+      <ProjectItem TargetFileName="index_route.js" ReplaceParameters="false">scripts\app\routes\index_route.js</ProjectItem>
+      <ProjectItem TargetFileName="home.hbs" ReplaceParameters="false">scripts\app\templates\app\home.hbs</ProjectItem>
+      <ProjectItem TargetFileName="application.hbs" ReplaceParameters="false">scripts\app\templates\application.hbs</ProjectItem>
+      <ProjectItem TargetFileName="flash.hbs" ReplaceParameters="false">scripts\app\templates\flash.hbs</ProjectItem>
+      <ProjectItem TargetFileName="navbar.hbs" ReplaceParameters="false">scripts\app\templates\navbar.hbs</ProjectItem>
+      <ProjectItem TargetFileName="bootstrap.js" ReplaceParameters="false">scripts\bootstrap.js</ProjectItem>
+      <ProjectItem TargetFileName="bootstrap.min.js" ReplaceParameters="false">scripts\bootstrap.min.js</ProjectItem>
+      <ProjectItem TargetFileName="ember-data.js" ReplaceParameters="false">scripts\ember-data.js</ProjectItem>
+      <ProjectItem TargetFileName="ember-data.min.js" ReplaceParameters="false">scripts\ember-data.min.js</ProjectItem>
+      <ProjectItem TargetFileName="ember-data.prod.js" ReplaceParameters="false">scripts\ember-data.prod.js</ProjectItem>
+      <ProjectItem TargetFileName="ember-debug.js" ReplaceParameters="false">scripts\ember-debug.js</ProjectItem>
+      <ProjectItem TargetFileName="ember.min.js" ReplaceParameters="false">scripts\ember.min.js</ProjectItem>
+      <ProjectItem TargetFileName="ember.prod.js" ReplaceParameters="false">scripts\ember.prod.js</ProjectItem>
+      <ProjectItem TargetFileName="handlebars.amd.js" ReplaceParameters="false">scripts\handlebars.amd.js</ProjectItem>
+      <ProjectItem TargetFileName="handlebars.amd.min.js" ReplaceParameters="false">scripts\handlebars.amd.min.js</ProjectItem>
+      <ProjectItem TargetFileName="handlebars.js" ReplaceParameters="false">scripts\handlebars.js</ProjectItem>
+      <ProjectItem TargetFileName="handlebars.min.js" ReplaceParameters="false">scripts\handlebars.min.js</ProjectItem>
+      <ProjectItem TargetFileName="handlebars.runtime.amd.js" ReplaceParameters="false">scripts\handlebars.runtime.amd.js</ProjectItem>
+      <ProjectItem TargetFileName="handlebars.runtime.amd.min.js" ReplaceParameters="false">scripts\handlebars.runtime.amd.min.js</ProjectItem>
+      <ProjectItem TargetFileName="handlebars.runtime.js" ReplaceParameters="false">scripts\handlebars.runtime.js</ProjectItem>
+      <ProjectItem TargetFileName="handlebars.runtime.min.js" ReplaceParameters="false">scripts\handlebars.runtime.min.js</ProjectItem>
+      <ProjectItem TargetFileName="jquery-2.1.1-vsdoc.js" ReplaceParameters="false">scripts\jquery-2.1.1-vsdoc.js</ProjectItem>
+      <ProjectItem TargetFileName="jquery-2.1.1.js" ReplaceParameters="false">scripts\jquery-2.1.1.js</ProjectItem>
+      <ProjectItem TargetFileName="jquery-2.1.1.min.js" ReplaceParameters="false">scripts\jquery-2.1.1.min.js</ProjectItem>
+      <ProjectItem TargetFileName="jquery-2.1.1.min.map" ReplaceParameters="false">scripts\jquery-2.1.1.min.map</ProjectItem>
+      <ProjectItem TargetFileName="jquery-ui-1.11.1.js" ReplaceParameters="false">scripts\jquery-ui-1.11.1.js</ProjectItem>
+      <ProjectItem TargetFileName="jquery-ui.min-1.11.1.js" ReplaceParameters="false">scripts\jquery-ui.min-1.11.1.js</ProjectItem>
+      <ProjectItem TargetFileName="jquery.validate-vsdoc.js" ReplaceParameters="false">scripts\jquery.validate-vsdoc.js</ProjectItem>
+      <ProjectItem TargetFileName="jquery.validate.js" ReplaceParameters="false">scripts\jquery.validate.js</ProjectItem>
+      <ProjectItem TargetFileName="jquery.validate.min.js" ReplaceParameters="false">scripts\jquery.validate.min.js</ProjectItem>
+      <ProjectItem TargetFileName="modernizr-2.8.3.js" ReplaceParameters="false">scripts\modernizr-2.8.3.js</ProjectItem>
+      <ProjectItem TargetFileName="_viewstart.cshtml" ReplaceParameters="false">views\_viewstart.cshtml</ProjectItem>
+      <ProjectItem TargetFileName="index.cshtml" ReplaceParameters="false">views\home\index.cshtml</ProjectItem>
+      <ProjectItem TargetFileName="_layout.cshtml" ReplaceParameters="false">views\shared\_layout.cshtml</ProjectItem>
+      <ProjectItem TargetFileName="error.cshtml" ReplaceParameters="false">views\shared\error.cshtml</ProjectItem>
+      <ProjectItem TargetFileName="web.config" ReplaceParameters="false">views\web.config</ProjectItem>
+      <ProjectItem TargetFileName="web.config" ReplaceParameters="false">web.config</ProjectItem>
+      <ProjectItem TargetFileName="web.debug.config" ReplaceParameters="false">web.debug.config</ProjectItem>
+      <ProjectItem TargetFileName="web.release.config" ReplaceParameters="false">web.release.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension" repositoryId="EmberSPATemplate..f434f4ee-16c5-4231-bb50-469d45dd3b55">
+      <package id="Antlr" version="3.5.0.2" targetFramework="net40" />
+      <package id="bootstrap" version="3.2.0" targetFramework="net40" />
+      <package id="csharp-ember-handlebars-compiler" version="1.5.0-beta1" targetFramework="net40" />
+      <package id="Ember.Data" version="1.0.0-BETA-9" targetFramework="net40" />
+      <package id="EmberJs" version="1.7.0" targetFramework="net40" />
+      <package id="EntityFramework" version="6.1.1" targetFramework="net40" />
+      <package id="FontAwesome" version="4.2.0" targetFramework="net40" />
+      <package id="FontAwesome.MVC" version="1.0.0" targetFramework="net40" />
+      <package id="Handlebars.js" version="1.3.0.0" targetFramework="net40" />
+      <package id="jQuery" version="2.1.1" targetFramework="net40" />
+      <package id="jQuery.UI.Combined" version="1.11.1" targetFramework="net40" />
+      <package id="jQuery.Validation" version="1.13.0" targetFramework="net40" />
+      <package id="Microsoft.AspNet.Mvc" version="4.0.40804.0" targetFramework="net40" />
+      <package id="Microsoft.AspNet.Providers" version="2.0.0" targetFramework="net40" />
+      <package id="Microsoft.AspNet.Providers.Core" version="2.0.0" targetFramework="net40" />
+      <package id="Microsoft.AspNet.Razor" version="2.0.30506.0" targetFramework="net40" />
+      <package id="Microsoft.AspNet.Web.Optimization" version="1.1.3" targetFramework="net40" />
+      <package id="Microsoft.AspNet.WebApi" version="4.0.20710.0" targetFramework="net40" />
+      <package id="Microsoft.AspNet.WebApi.Client" version="4.0.30506.0" targetFramework="net40" />
+      <package id="Microsoft.AspNet.WebApi.Core" version="4.0.30506.0" targetFramework="net40" />
+      <package id="Microsoft.AspNet.WebApi.WebHost" version="4.0.30506.0" targetFramework="net40" />
+      <package id="Microsoft.AspNet.WebPages" version="2.0.30506.0" targetFramework="net40" />
+      <package id="Microsoft.Net.Http" version="2.0.20710.0" targetFramework="net40" />
+      <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" targetFramework="net40" />
+      <package id="Modernizr" version="2.8.3" targetFramework="net40" />
+      <package id="Newtonsoft.Json" version="6.0.5" targetFramework="net40" />
+      <package id="WebActivatorEx" version="2.0.5" targetFramework="net40" />
+      <package id="WebGrease" version="1.6.0" targetFramework="net40" />
+    </packages>
+  </WizardData>
+</VSTemplate>

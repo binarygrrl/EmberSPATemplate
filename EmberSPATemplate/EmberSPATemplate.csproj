@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{0E7E7CCF-9C95-4DD2-917F-EB3616184652}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmberSPATemplate</RootNamespace>
+    <AssemblyName>EmberSPATemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\Antlr.3.5.0.2\Antlr.3.5.0.2.nupkg">
+      <Link>packages\Antlr.3.5.0.2.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\bootstrap.3.2.0\bootstrap.3.2.0.nupkg">
+      <Link>packages\bootstrap.3.2.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\csharp-ember-handlebars-compiler.1.5.0-beta1\csharp-ember-handlebars-compiler.1.5.0-beta1.nupkg">
+      <Link>packages\csharp-ember-handlebars-compiler.1.5.0-beta1.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Ember.Data.1.0.0-BETA-9\Ember.Data.1.0.0-BETA-9.nupkg">
+      <Link>packages\Ember.Data.1.0.0-BETA-9.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\EmberJS.1.7.0\EmberJS.1.7.0.nupkg">
+      <Link>packages\EmberJS.1.7.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\EntityFramework.6.1.1\EntityFramework.6.1.1.nupkg">
+      <Link>packages\EntityFramework.6.1.1.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\FontAwesome.4.2.0\FontAwesome.4.2.0.nupkg">
+      <Link>packages\FontAwesome.4.2.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\FontAwesome.MVC.1.0.0\FontAwesome.MVC.1.0.0.nupkg">
+      <Link>packages\FontAwesome.MVC.1.0.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Handlebars.js.1.3.0.0\Handlebars.js.1.3.0.0.nupkg">
+      <Link>packages\Handlebars.js.1.3.0.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\jQuery.2.1.1\jQuery.2.1.1.nupkg">
+      <Link>packages\jQuery.2.1.1.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\jQuery.UI.Combined.1.11.1\jQuery.UI.Combined.1.11.1.nupkg">
+      <Link>packages\jQuery.UI.Combined.1.11.1.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\jQuery.Validation.1.13.0\jQuery.Validation.1.13.0.nupkg">
+      <Link>packages\jQuery.Validation.1.13.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Microsoft.AspNet.Mvc.4.0.40804.0\Microsoft.AspNet.Mvc.4.0.40804.0.nupkg">
+      <Link>packages\Microsoft.AspNet.Mvc.4.0.40804.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Microsoft.AspNet.Providers.2.0.0\Microsoft.AspNet.Providers.2.0.0.nupkg">
+      <Link>packages\Microsoft.AspNet.Providers.2.0.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Microsoft.AspNet.Providers.Core.2.0.0\Microsoft.AspNet.Providers.Core.2.0.0.nupkg">
+      <Link>packages\Microsoft.AspNet.Providers.Core.2.0.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Microsoft.AspNet.Razor.2.0.30506.0\Microsoft.AspNet.Razor.2.0.30506.0.nupkg">
+      <Link>packages\Microsoft.AspNet.Razor.2.0.30506.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg">
+      <Link>packages\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Microsoft.AspNet.WebApi.4.0.20710.0\Microsoft.AspNet.WebApi.4.0.20710.0.nupkg">
+      <Link>packages\Microsoft.AspNet.WebApi.4.0.20710.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\Microsoft.AspNet.WebApi.Client.4.0.30506.0.nupkg">
+      <Link>packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\Microsoft.AspNet.WebApi.Core.4.0.30506.0.nupkg">
+      <Link>packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0.nupkg">
+      <Link>packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\Microsoft.AspNet.WebPages.2.0.30506.0.nupkg">
+      <Link>packages\Microsoft.AspNet.WebPages.2.0.30506.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Microsoft.Net.Http.2.0.20710.0\Microsoft.Net.Http.2.0.20710.0.nupkg">
+      <Link>packages\Microsoft.Net.Http.2.0.20710.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg">
+      <Link>packages\Microsoft.Web.Infrastructure.1.0.0.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Modernizr.2.8.3\Modernizr.2.8.3.nupkg">
+      <Link>packages\Modernizr.2.8.3.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\Newtonsoft.Json.6.0.5\Newtonsoft.Json.6.0.5.nupkg">
+      <Link>packages\Newtonsoft.Json.6.0.5.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\WebActivatorEx.2.0.5\WebActivatorEx.2.0.5.nupkg">
+      <Link>packages\WebActivatorEx.2.0.5.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\WebGrease.1.6.0\WebGrease.1.6.0.nupkg">
+      <Link>packages\WebGrease.1.6.0.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="emberjs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmberSPA\EmberSPA.csproj">
+      <Project>{316C4B3B-D6CD-44E6-A4B6-AAF50F375F58}</Project>
+      <Name>EmberSPA</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+      <TemplateType>Project</TemplateType>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\VSSDK\Microsoft.VsSDK.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

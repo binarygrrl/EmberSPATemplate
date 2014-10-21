@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="EmberSPATemplate..f434f4ee-16c5-4231-bb50-469d45dd3b55">
+    <Name>EmberSPATemplate</Name>
+    <Author>Jim Nanney</Author>
+    <Version>1.0</Version>
+    <Description xml:space="preserve">Ember Single Page Application with MVC4 Web Api Backend for VS2010</Description>
+    <Locale>1033</Locale>
+    <MoreInfoUrl>http://emberjs.com</MoreInfoUrl>
+    <GettingStartedGuide>http://emberjs.com</GettingStartedGuide>
+    <Icon>emberjs.png</Icon>
+    <PreviewImage>emberjs.png</PreviewImage>
+    <SupportedProducts>
+      <VisualStudio Version="10.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.0" />
+  </Identifier>
+  <References> <!-- 1.5.20902.9026 -->
+    <Reference Id="NuPackToolsVsix.Microsoft.67e54e40-0ae3-42c5-a949-fddf5739e7a5" MinVersion="1.5.20902.9026">
+      <Name>NuGet Package Manager</Name>
+      <MoreInfoUrl>http://docs.nuget.org/</MoreInfoUrl>
+    </Reference>
+  </References>
+  <Content>
+    <ProjectTemplate>ProjectTemplates</ProjectTemplate>
+  </Content>
+</Vsix>
